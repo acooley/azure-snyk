@@ -20,6 +20,11 @@ RUN npm install --global snyk snyk-to-html && \
 # Install Maven
 RUN apt-get install --yes maven
 
+# Install Python
+RUN apt-get install --yes python3
+RUN apt-get install --yes python3-pip
+
+
 RUN mkdir /home/node
 RUN chmod -R a+wrx /home/node
 WORKDIR /home/node
